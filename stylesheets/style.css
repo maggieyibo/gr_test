@@ -1,7 +1,9 @@
 /* CSS */
 	body, html {
 		overflow-x: hidden;
+		/*overflow-y: hidden;*/
 	}
+
  	nav {
  		background-color: white;
  		height: 50px;
@@ -15,30 +17,6 @@
  		text-align: right;
  	}
 
- 	#main {
- 		background-image: url('../images/background.png');
- 		background-repeat: no-repeat;
- 		background-size: 100%;
- 		height: 600px;
- 		width: 100vw;
- 		display: table;
- 	}
-
- 	#billboard {
- 		padding: 3% 1%;
- 	}
-
- 	#billboard img {
- 		width: 624px;
- 		height: 390px;
- 	}
- 	#products {
- 		top: 110px;
- 		left: -15px;
- 	}
- 	#products img {
- 		width: 300px;
- 	}
  	#logo {
  		display: inline-block;
  		float: left;
@@ -53,22 +31,51 @@
  		list-style: none;
  		padding-left: 0;
  		display: inline-block;
- 		float: right;	
+ 		float: right;
+
 
  	}
  	li {
  		margin: 12px 10px;
  		float: left;
+
  	}
  	.nav-item {
  		width: 180px;
  	}
+
+ 	#main {
+ 		background-image: url('../images/background.png');
+ 		background-repeat: no-repeat;
+ 		background-size: 100%;
+ 		height: 600px;
+ 		width: 100vw;
+ 		display: table;
+ 	}
+
+ 	#billboard {
+ 		padding: 3% 1%;
+ 		left: -25%;
+ 		top: 21px;
+ 	}
+
+ 	#billboard img {
+ 		width: 624px;
+ 		height: 390px;
+ 	}
+ 	#products {
+ 		top: 110px;
+ 		left: -15px;
+ 	}
+ 	#products img {
+ 		width: 300px;
+ 	}
  	.footer {
- 		position: relative;
- 		bottom: 120px;
- 		
-
-
+ 		position: absolute;
+ 		left: -300px;
+  bottom: 91px;
+  width: auto;
+ 	
  		
  	}
 /*}*/
@@ -76,22 +83,41 @@
 /* MEDIA QUERIES for 992px or less */
 @media only screen and (max-width : 992px) {
 
+	body, html {
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
  	nav {
  		height: 50px;
  		width: 100vw;
  	}
+ 	p {
+ 		color: black;
+ 		/*margin-top: 0px;
+ 		margin-bottom: 0px;*/
+ 		text-align: left;
+ 		padding-left: 2%;
 
+ 	}
  	#main {
  		height: 300px;
  		width: 100vw;
  		display: table;
+ 		background-size: 100% auto;
  	}
 
  	#billboard {
- 		height: 20%;
- 		width: 20%;
  		vertical-align: middle;
- 		left: 50%;
+ 		position: relative;
+ 		left: -55%;
+ 		top: 20%;
+ 	}
+
+ 	#billboard img {
+ 		height: 300px;
+ 		width: auto;
+ 		padding-left: 50px;
+
  	}
 
  	#logo {
@@ -107,24 +133,37 @@
  	li {
  		display: inline-block;
  		margin: 12px 10px;
+
  	}
 
  	ul {
  		list-style: none;
  		width: 40%;
+ 		float: left;
  	}
  	.nav-item {
- 		width: 20%;
+ 		width: 70%;
  	}
- 	footer {
- 		height: 70px;
- 		width: 100vw;
+ 	#products {
+ 		top: -365px;
+ 		left: 383px;
+ 	}
+ 	
+ 	.footer {
+ 		position: relative;
+ 		left: -370px;
+ 		bottom: 48px;
+ 		width: auto;
+
  		
  	}
 }
-/* for 768px or less */
+/* for 768px or less *//*
 @media only screen and (max-width : 768px) {
-	
+	body, html {
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
 	nav {
 		display: inline-block;
 		width: 10vw;
@@ -142,18 +181,19 @@
  		height: 30%;
  		width: 30%;
  		margin: 20px auto;	
- 	}
+ 		background-size: 100% auto;
+ 	}*/
 
- 	#billboard {
+ /*	#billboard {
  		
  		height: 10%;
  		width: 10%;
  		vertical-align: middle;
- 		left: 50%;
+ 		/*left: 50%;*/
  		margin-left: -50px;	
  	}	
-
- 	.order {
+*/
+ 	/*.order {
  		display: none;
  	}
 
@@ -165,3 +205,5 @@
 }
 
 
+@media only screen and (max-width : 992px) {
+*/
