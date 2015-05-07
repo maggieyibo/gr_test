@@ -1,0 +1,154 @@
+/* CSS */
+ 	nav {
+ 		background-color: white;
+ 		height: 50px;
+ 		width: 100vw;
+ 	}
+
+ 	p {
+ 		color: black;
+ 		text-align: right;
+ 	}
+
+ 	#main {
+ 		background-image: url('../images/background.png');
+ 		background-repeat: no-repeat;
+ 		background-size: 100%;
+ 		height: 300px;
+ 		width: 100vw;
+ 		display: table;
+ 	}
+
+ 	#billboard {
+ 		padding: 5% 2%;
+ 	}
+
+ 	#products {
+ 		top: 130px;
+ 		left: -14px;
+ 	}
+ 	#logo {
+ 		display: inline-block;
+ 		float: left;
+ 		color: white;
+ 	}
+ 	#navigation {
+ 		display: inline-block;
+ 		float: right;
+
+ 	}
+ 	ul {
+ 		list-style: none;
+ 		padding-left: 0;
+ 		display: inline-block;
+ 		float: right;	
+
+ 	}
+ 	li {
+ 		margin: 12px 10px;
+ 		float: left;
+ 	}
+ 	.nav-item {
+ 		width: 180px;
+ 	}
+ 	.footer {
+ 		bottom: -40px;
+ 		
+
+
+ 		
+ 	}
+/*}*/
+
+/* MEDIA QUERIES for 992px or less */
+@media only screen and (max-width : 992px) {
+
+ 	nav {
+ 		height: 50px;
+ 		width: 100vw;
+ 	}
+
+ 	#main {
+ 		height: 300px;
+ 		width: 100vw;
+ 		display: table;
+ 	}
+
+ 	#billboard {
+ 		height: 20%;
+ 		width: 20%;
+ 		vertical-align: middle;
+ 		left: 50%;
+ 	}
+
+ 	#logo {
+ 		display: inline-block;
+ 		float: left;
+ 	}
+
+ 	#navigation {
+ 		display: inline-block;
+ 		float: right;
+ 	}
+
+ 	li {
+ 		display: inline-block;
+ 		margin: 12px 10px;
+ 	}
+
+ 	ul {
+ 		list-style: none;
+ 		width: 40%;
+ 	}
+ 	.nav-item {
+ 		width: 20%;
+ 	}
+ 	footer {
+ 		height: 70px;
+ 		width: 100vw;
+ 		
+ 	}
+}
+/* for 768px or less */
+@media only screen and (max-width : 768px) {
+	
+	nav {
+		display: inline-block;
+		width: 10vw;
+		float: left;
+		height: 300px;
+	}
+
+	.nav-item {
+ 		display: block;
+ 		width: 500%;
+ 		
+ 	}
+ 	#main {
+ 		
+ 		height: 30%;
+ 		width: 30%;
+ 		margin: 20px auto;	
+ 	}
+
+ 	#billboard {
+ 		
+ 		height: 10%;
+ 		width: 10%;
+ 		vertical-align: middle;
+ 		left: 50%;
+ 		margin-left: -50px;	
+ 	}	
+
+ 	.order {
+ 		display: none;
+ 	}
+
+	section {
+		display: inline-block;
+		width: 90vw;
+		float: left;
+	}
+}
+
+
